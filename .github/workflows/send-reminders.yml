@@ -2,6 +2,11 @@ name: My Planner Reminders
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/send-reminders.yml"
   schedule:
     - cron: "*/5 * * * *"
 
