@@ -24,7 +24,7 @@ jobs:
             exit 1
           fi
 
-          HTTP_CODE=$(curl --silent --show-error             --output response.txt             --write-out "%{http_code}"             --request POST             "https://tskpdopzrqfqgtmjneiq.supabase.co/functions/v1/send-reminders"             --header "Content-Type: application/json"             --header "x-cron-secret: $CRON_SECRET"             --data "{}")
+          HTTP_CODE=$(curl --silent --show-error             --output response.txt             --write-out "%{http_code}"             --request POST             "https://tskpdopzrqfqgtmjnejq.supabase.co/functions/v1/send-reminders"             --header "Content-Type: application/json"             --header "x-cron-secret: $CRON_SECRET"             --data "{}")
 
           cat response.txt
           echo
