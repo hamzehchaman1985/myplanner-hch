@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "myplanner-reminder-cron",
+  "main": "src/reminder-worker.js",
+  "compatibility_date": "2026-09-26",
+  "observability": {
+    "enabled": true
+  },
+  "vars": {
+    "SUPABASE_FUNCTION_URL": "https://tskpdopzrqfqgtmjneiq.supabase.co/functions/v1/send-reminders"
+  },
+  "triggers": {
+    "crons": [
+      "* * * * *"
+    ]
+  }
+}
