@@ -4,7 +4,7 @@
 const STORAGE='my_planner_cloud_v3_state';
 const CFG='my_planner_cloud_v3_config';
 const DIRTY='my_planner_cloud_v3_dirty';
-const VAPID_PUBLIC_KEY='BPX983XhTSPjaHGsb5j8Jc1-U55THyITqACopKBylkFizPYOTTdBq1WemHlUmGfsxxH6o2maxImECY_cAd_yMQQ';
+const VAPID_PUBLIC_KEY='BCHiE_fMLRNkDrfzLpAiGzc3HWLnFhDLGzb83w1xtrfEM2Q7B4cw2dNCAlCJq52kdCDxkknJ4T0MJq78SidY46E';
 const DAY_NAMES=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const defaultState=()=>({tasks:[],notes:{},updatedAt:new Date().toISOString()});
